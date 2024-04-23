@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Currency <span>Converter</span></h1>
+        <form>
+            <div class="input-box">
+                <p id="amt">Amount</p>
+                <input type="text" value="1">
+            </div>
+            <div class="currency-calc">
+                <div class="from">
+                    <p>From</p>
+                    <div class="content">
+                        <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+                        <select name="first">
+                            <!-- <option value="USA">USA</option>
+                            <option value="INR">INR</option>
+                            <option value="AED">AED</option>
+                            <option value="CAD">CAD</option> -->
+                        </select>
+                    </div>
+                </div>
+                <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                <div class="to">
+                    <p>To</p>
+                    <div class="content">
+                        <img src="https://flagcdn.com/48x36/in.png" alt="flag">
+                        <select name="second">
+                            <!-- <option value="USA">USA</option>
+                            <option value="INR">INR</option>
+                            <option value="AED">AED</option>
+                            <option value="CAD">CAD</option> -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="text">Getting exchange rate...</div>
+            <button class="btn">Get Exchange Rate</button>
+        </form>
+    </div>
+
+    <script src="list.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
